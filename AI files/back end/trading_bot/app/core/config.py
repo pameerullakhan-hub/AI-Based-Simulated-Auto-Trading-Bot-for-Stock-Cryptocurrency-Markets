@@ -1,0 +1,19 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+SECRET_KEY = os.getenv("SECRET_KEY", "supersecretkey123")
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24
+
+ANGEL_ONE_API_KEY = os.getenv("ANGEL_ONE_API_KEY")
+ANGEL_ONE_CLIENT_ID = os.getenv("ANGEL_ONE_CLIENT_ID")
+ANGEL_ONE_PASSWORD = os.getenv("ANGEL_ONE_PASSWORD")
+ANGEL_ONE_TOTP = os.getenv("ANGEL_ONE_TOTP")
+ANGEL_ONE_SECRET_KEY = os.getenv("ANGEL_ONE_SECRET_KEY")
+
+NEWS_API_KEY = os.getenv("NEWS_API_KEY")
+
+BINANCE_TESTNET_KEY = os.getenv("BINANCE_TESTNET_KEY")
+BINANCE_TESTNET_SECRET = os.getenv("BINANCE_TESTNET_SECRET")
